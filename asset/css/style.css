@@ -16,6 +16,7 @@ header{
     position: fixed;
     right: 10px;
     top: 20px;
+    z-index: 1;
 }
 .menu{
     text-align: center;
@@ -41,10 +42,85 @@ nav ul li a{
 }
 .full-red{
     background-color: red;
+    position: relative;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: yellow;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: green;
+    text-align: center;
+}
+.full-red img{
+    top: 40%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.full-red h1{
+    /* top: 70%;
+    bottom: 50%;
+    left: 70%;
+    right: 30%; */
+    top: 70%;
+    bottom: 30%;
+    left: 45%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
 }
 .full-yellow{
     background-color: yellow;
+    position: relative;
 }
+.full-yellow img{
+    top: 70%;
+    bottom: 30%;
+    left: 45%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.full-yellow h2{
+    top: 70%;
+    bottom: 30%;
+    left: 45%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
 .full-green{
     background-color: green;
+    position: relative;
 }
+.full-green img{
+    top: 40%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.full-green h1{
+    top: 70%;
+    bottom: 30%;
+    left: 45%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/* top: 70%;
+    bottom: 30%;
+    left: 45%;
+    right: 20%; */
