@@ -9,10 +9,13 @@
     clear: both;
 }
 /* GENERAL */
-.full{
+section{
     height: 100vh;
+    position: relative;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 header{
     position: fixed;
     right: 10px;
@@ -28,103 +31,62 @@ nav{
     display: inline-block;
 }
 
-nav ul li{
+header nav ul li{
     display: inline-block;
-    list-style-type: none;
+    list-style: none;
 }
 
 nav ul li a{
     text-decoration: none;
+    display: inline-block;
     color: black;
-    padding: 10px 10px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 60%;
-    margin-left: 10px;
+    margin: 30px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-weight: bold;
 }
-
+header nav ul li :hover{
+    box-shadow: 5px 5px 20px black;
+}
 .f-numb{
-    background-color: rgb(245, 255, 255);
+    background-color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* MAIN SECTION RED */
 .full-red{
     background-color: red;
-    position: relative;
 }
 
-h1{
+.box img{
+width: 100%;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+/* SECTION YELLOW */
+.full-yellow{
+    background-color: yellow;
+}
+
+.box h2,
+ h1{
     text-transform: uppercase;
     font-family: 'Rubik Mono One', sans-serif;
     color: yellow;
     text-align: center;
-}
-
-h2{
-    text-transform: uppercase;
-    font-family: 'Rubik Mono One', sans-serif;
-    color: green;
-    text-align: center;
-}
-
-.full-red img{
-    top: 40%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.full-red h1{
-    top: 70%;
-    bottom: 30%;
-    left: 45%;
-    right: 20%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-/* SECTION YELLOW */
-.full-yellow{
-    background-color: yellow;
-    position: relative;
-}
-
-.full-yellow img{
-    top: 50%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.full-yellow h2{
-    font-size: 2em;
-    top: 80%;
-    bottom: 30%;
-    left: 45%;
-    right: 20%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    font-size: 3em;
 }
 /* SECTION GREEN */
 .full-green{
     background-color: green;
-    position: relative;
 }
-.full-green img{
-    top: 40%;
-    bottom: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-.full-green h1{
-    top: 70%;
-    bottom: 30%;
-    left: 45%;
-    right: 20%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+#c-green{
+    color: green;
 }
